@@ -1,4 +1,7 @@
 /**
+* This file was first created by Dr. Jonathan Cook 
+*           was updated by Dr. Huiping Cao in January 2025
+* 
 * Web worker: an object of this class executes in its own new thread
 * to receive and respond to a single HTTP request. After the constructor
 * the object executes on its "run" method, and leaves when it is done.
@@ -99,7 +102,7 @@ private void writeHTTPHeader(OutputStream os, String contentType) throws Excepti
    os.write("Date: ".getBytes());
    os.write((df.format(d)).getBytes());
    os.write("\n".getBytes());
-   os.write("Server: Jon's very own server\n".getBytes());
+   os.write("Server: CS 371 very own server\n".getBytes());
    //os.write("Last-Modified: Wed, 08 Jan 2003 23:11:55 GMT\n".getBytes());
    //os.write("Content-Length: 438\n".getBytes()); 
    os.write("Connection: close\n".getBytes());
